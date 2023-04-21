@@ -1,4 +1,4 @@
-name: Build and Upload METAR
+name: Build and Upload RUNWAY
 
 on:
   schedule:
@@ -33,7 +33,7 @@ jobs:
         run: mkdir web
 
       - name: Run program
-        run: python get_metar.py > web/metar.json
+        run: python get_runway.py > web/runway.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
