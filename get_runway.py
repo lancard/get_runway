@@ -65,7 +65,7 @@ for item in all_runway_list:
 
 
 # RKSI(113)
-html = requests.get("https://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=113").text
+html = requests.get("http://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=113").text
 soup = BeautifulSoup(html, 'html.parser')
 rksi_33r = len(soup.select("div.airplane.right")) > 0
 if rksi_33r:
@@ -80,7 +80,7 @@ else:
 	all_runway['RKSI']['34R']['use'] = False
 
 # RKSS(110)
-html = requests.get("https://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=110").text
+html = requests.get("http://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=110").text
 soup = BeautifulSoup(html, 'html.parser')
 rkss_32r = len(soup.select("div.airplane.right")) > 0
 if rkss_32r:
@@ -91,7 +91,7 @@ else:
 	all_runway['RKSS']['32R']['use'] = False
 
 # RKPC(182)
-html = requests.get("https://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=182").text
+html = requests.get("http://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=182").text
 soup = BeautifulSoup(html, 'html.parser')
 rkpc_07 = len(soup.select("div.airplane.left")) > 0
 if rkpc_07:
@@ -105,7 +105,7 @@ if rkpc_31:
 	all_runway['RKPC']['31']['use'] = True
 
 # RKJB(163)
-html = requests.get("https://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=163").text
+html = requests.get("http://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=163").text
 soup = BeautifulSoup(html, 'html.parser')
 rkjb_01 = len(soup.select("div.airplane.left")) > 0
 if rkjb_01:
@@ -114,7 +114,7 @@ else:
 	all_runway['RKJB']['01']['use'] = False
 
 # RKPU(151)
-html = requests.get("https://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=151").text
+html = requests.get("http://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=151").text
 soup = BeautifulSoup(html, 'html.parser')
 rkpu_36 = len(soup.select("div.airplane.right")) > 0
 if rkpu_36:
@@ -123,7 +123,7 @@ else:
 	all_runway['RKPU']['36']['use'] = False
 
 # RKNY(92)
-html = requests.get("https://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=92").text
+html = requests.get("http://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=92").text
 soup = BeautifulSoup(html, 'html.parser')
 rkny_33 = len(soup.select("div.airplane.right")) > 0
 if rkny_33:
@@ -132,7 +132,7 @@ else:
 	all_runway['RKNY']['33']['use'] = False
 
 # RKJY(167)
-html = requests.get("https://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=167").text
+html = requests.get("http://global.amo.go.kr/amosobsnew/AmosRealTimeImage.do?stnId=167").text
 soup = BeautifulSoup(html, 'html.parser')
 rkjy_17 = len(soup.select("div.airplane.left")) > 0
 if rkjy_17:
